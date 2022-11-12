@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    firefly_app_1:
+        links:
+            - firefly_app_1
+        environment:
+            - AUTH_TOKEN=2GrZaLntHmQjQr8wDCrBxp36sJN_66BVjnrBqt8PJny1Sb7KU
+        network_mode: firefly_default
+        image: 'firefly_app_1:8080'
